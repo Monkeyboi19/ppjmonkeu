@@ -1,0 +1,242 @@
+/* google Font */
+@import url('https://fonts.googleapis.com/css2?family=Redacted&display=swap');
+
+/* Basic style */
+body {
+    font-family:
+        'noto Sans japanese';
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    background-color: rgb(112, 55, 55);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 9px;
+    padding: 0;
+}
+
+button {
+    height: 38px;
+    background-color: blanchedalmond;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* color is text color */
+    color: aliceblue;
+    border-radius: 15px;
+}
+
+.light,
+.dark {
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.light {
+    background-color: beige;
+    color: antiquewhite;
+}
+
+.dark {
+    background-color: aqua;
+    color: wheat;
+}
+
+.header {
+    background-color: rgba(134, 94, 91, 0.641);
+    color: honeydew;
+    min-height: 70;
+    border-bottom: 3px solid silver
+}
+
+header>.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header li {
+    list-style: disc;
+    padding: 0 20px;
+}
+
+header a {
+    color: beige;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+#highlight,
+#current a {
+    color: mediumpurple;
+    font-weight: bold;
+}
+
+#current a:hover,
+a:hover {
+    color: rgb(111, 168, 111);
+}
+
+/* showcase */
+
+#showcase {
+    min-height: 400px;
+    background-image: url("aliona-gumeniuk-GAauSStia3s-unsplash.jpg");
+
+}
+
+#showcase h1 {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+/* Newsletter */
+#newsletter {
+    background-color: black;
+    padding: 15px;
+    color: aliceblue;
+}
+
+#newsletter>.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#newsletter input {
+    padding: 4px;
+    height: 25px;
+    width: 25px;
+}
+
+/* boxes */
+
+#boxes {
+    margin-top: 20px;
+}
+
+#boxes>.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+}
+
+i {
+    font-size: 150px;
+}
+
+.fa-html5 {
+    color: gold;
+}
+
+.fa-css3-alt {
+    color: wheat;
+}
+
+.fa-square-js {
+    color: palegreen;
+}
+
+/* About */
+#about {
+    background-color: navajowhite;
+    color: beige;
+    padding: 20px;
+}
+
+#about>.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 50px;
+}
+
+#about .main-col {
+    color: azure;
+}
+
+#about .sidebar {
+    margin-top: 10px;
+}
+
+/* services */
+#services>.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 40px;
+}
+
+#services li {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 5px;
+    background-color: blueviolet;
+}
+
+#services .sidebar {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#services input,
+#services textarea {
+    padding: 10px;
+    width: 90%;
+}
+
+/* Footer */
+.footer {
+    background-color: aquamarine;
+    color: azure;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Media queries */
+@media (max-width:768px) {
+    .header>.container #newsletter>.container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+
+    #showcase .container {
+        padding-bottom: 50px;
+    }
+
+    .box {
+        width: 80%;
+    }
+
+    #about>.container,
+    #services>.container {
+        grid-template-columns: 1fr;
+    }
+}

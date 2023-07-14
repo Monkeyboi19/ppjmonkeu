@@ -1,0 +1,36 @@
+body {
+    font-family: "comic-sans";
+    text-align: center;
+}
+
+h1 {
+    color: black;
+}
+
+p {
+    margin-top: 20px;
+    color:rgb(52, 42, 35) ;
+}
+
+input {
+    width: 150px;
+    padding: 10px;
+    border: 2px solid black;
+border-radius: 4px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 251, 251);
+    border: none;
+    border-radius: 2px solid black;
+    cursor: pointer;
+}
+
+#message {
+    margin-top: 20px;
+    color: darkgrey;
+    font-weight: bold;
+}
